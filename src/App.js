@@ -116,17 +116,29 @@ export default function App() {
             <Slider>
               <Slide index={0}>
                 <div className="slide-content">
-                  <img src={one} alt="one" className="carousel-one" />
+                  <img
+                    src={one}
+                    alt="one"
+                    className="carousel-image carousel-one"
+                  />
                 </div>
               </Slide>
               <Slide index={1}>
                 <div className="slide-content">
-                  <img src={two} alt="two" className="carousel-two" />.
+                  <img
+                    src={two}
+                    alt="two"
+                    className="carousel-image carousel-two"
+                  />
                 </div>
               </Slide>
               <Slide index={2}>
                 <div className="slide-content">
-                  <img src={three} alt="three" className="carousel-three" />
+                  <img
+                    src={three}
+                    alt="three"
+                    className="carousel-image carousel-three"
+                  />
                 </div>
               </Slide>
             </Slider>
@@ -153,14 +165,20 @@ export default function App() {
                   />
                   <div className="Recommended-div-img-div-content">
                     <p className="Recommended-div-card-movie-rating">
-                      <FaStar size={24} color="rgba(219, 51, 74, 1)" />
-                      <p className="Recommended-div-card-movie-rating-text">{item.rating}/10</p>
+                      <FaStar size={22} color="rgba(219, 51, 74, 1)" />
+                      <p className="Recommended-div-card-movie-rating-text">
+                        {item.rating}/10
+                      </p>
                     </p>
-                    <p className="Recommended-div-card-movie-votes">{item.votes} votes</p>
+                    <p className="Recommended-div-card-movie-votes">
+                      {item.votes} votes
+                    </p>
                   </div>
                 </div>
                 <p className="Recommended-div-card-movie-name">{item.name}</p>
-                <p className="Recommended-div-card-movie-genres">{item.generes.join("/")}</p>
+                <p className="Recommended-div-card-movie-genres">
+                  {item.generes.join("/")}
+                </p>
               </div>
             ))}
           </div>
